@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -704,7 +704,7 @@
       document.getElementById('iconMoon').style.display = t === 'light' ? 'block' : 'none';
     }
     var saved = store('theme');
-    apply(saved === 'light' || saved === 'dark' ? saved : 'dark');
+    apply(saved === 'light' || saved === 'dark' ? saved : 'light');
     document.getElementById('themeBtn').addEventListener('click', function () {
       var t = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       apply(t); store('theme', t);
